@@ -81,11 +81,11 @@ $myFilm = [$film1, $film2];
                             echo '⭐️';
                         }?></span>
                 </div>
-                <p><?= $film->overview ?></p>
+                <p class="overview"><?= $film->overview ?></p>
                 <div class="genres">
                     <span>Genere:</span><?php
                     foreach ($film->genres as $genre) {?>
-                        <span class="actors"><?php $genre ?></span><?php
+                        <span class="genre"><?= $genre ?></span><?php
                     }?>
                 </div>
                 <div class="casts">
